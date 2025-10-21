@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graphic Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(6px);
+        }
+
+        .project-img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="antialiased bg-neutral-900 text-neutral-100">
+    <!-- NAV -->
+    <header class="fixed w-full z-30 glass border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between py-5">
+                <a href="#" class="text-2xl font-extrabold tracking-tight">Rodrey Jabon</a>
+                <nav class="hidden md:flex gap-6 items-center">
+                    <a href="#portfolio" class="text-sm hover:underline">Work</a>
+                    <a href="#about" class="text-sm hover:underline">About</a>
+                    <a href="#contact" class="text-sm hover:underline">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menuBtn" aria-label="open menu" class="p-2 rounded-md glass">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-neutral-900/70">
+            <div class="px-6 pb-6 flex flex-col gap-4">
+                <a href="#work" class="py-2">Work</a>
+                <a href="#about" class="py-2">About</a>
+                <a href="#contact" class="py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="pt-28">
+        <section class="max-w-6xl mx-auto px-6 pb-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Graphic designer — visual systems &
+                        brand work</h1>
+                    <p class="mt-6 text-neutral-300 max-w-xl">Creating visually compelling designs that elevate brands
+                        and communicate ideas effectively.
+                        Specialized in branding, layout, and digital illustration for both digital and print media.</p>
+                    <div class="mt-8 flex gap-4">
+                        <a href="#work"
+                            class="inline-flex items-center px-5 py-3 rounded-lg bg-white text-neutral-900 font-semibold">View
+                            work</a>
+                        <a href="#contact" class="inline-flex items-center px-5 py-3 rounded-lg glass">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80">
+                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f6b3b6e3b9b4c8e2f4a9b1d66b7f7a1"
+                            alt="hero" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY / WORK -->
+        <!-- Portfolio Gallery -->
+        <section id="portfolio" class="relative max-w-7xl mx-auto px-6 py-24">
+            <h2 class="text-4xl font-semibold text-center mb-10">Portfolio</h2>
+            <div class="work"></div>
+            <div id="gallery-container" class="relative overflow-hidden">
+                <div id="gallery" class="flex transition-transform duration-700 ease-in-out">
+                    <!-- Page 1 -->
+                    <div class="grid grid-cols-4 gap-4 min-w-full">
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=1" alt="Portfolio image 1" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=2" alt="Portfolio image 2" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=3" alt="Portfolio image 3" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=4" alt="Portfolio image 4" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=5" alt="Portfolio image 5" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=6" alt="Portfolio image 6" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=7" alt="Portfolio image 7" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=8" alt="Portfolio image 8" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                    </div>
+
+                    <!-- Page 2 -->
+                    <div class="grid grid-cols-4 gap-4 min-w-full">
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=9" alt="Portfolio image 9" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=10" alt="Portfolio image 10" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=11" alt="Portfolio image 11" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=12" alt="Portfolio image 12" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=13" alt="Portfolio image 13" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=14" alt="Portfolio image 14" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=15" alt="Portfolio image 15" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=16" alt="Portfolio image 16" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                    </div>
+
+                    <!-- Page 3 -->
+                    <div class="grid grid-cols-4 gap-4 min-w-full">
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=17" alt="Portfolio image 17" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=18" alt="Portfolio image 18" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=19" alt="Portfolio image 19" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=20" alt="Portfolio image 20" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=21" alt="Portfolio image 21" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=22" alt="Portfolio image 22" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=23" alt="Portfolio image 23" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                        <button type="button" class="project-btn rounded-xl overflow-hidden p-0 bg-transparent border-0 focus:outline-none">
+                            <img src="https://picsum.photos/600/400?random=24" alt="Portfolio image 24" class="rounded-xl object-cover w-full h-full">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Arrows -->
+                <button id="prev"
+                    class="absolute top-1/2 left-0 transform -translate-y-1/2 text-5xl px-4 text-gray-400 hover:text-white">&lt;</button>
+                <button id="next"
+                    class="absolute top-1/2 right-0 transform -translate-y-1/2 text-5xl px-4 text-gray-400 hover:text-white">&gt;</button>
+
+                <!-- Dots -->
+                <div id="dots" class="flex justify-center mt-6 space-x-2">
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full transition-all"></span>
+                    <span class="dot w-3 h-3 bg-gray-600 rounded-full transition-all"></span>
+                    <span class="dot w-3 h-3 bg-gray-600 rounded-full transition-all"></span>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const gallery = document.getElementById("gallery");
+            const dots = document.querySelectorAll(".dot");
+            const totalPages = 3;
+            let currentPage = 0;
+
+            function showPage(index) {
+                gallery.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("bg-gray-400", i === index);
+                    dot.classList.toggle("bg-gray-600", i !== index);
+                    dot.classList.toggle("scale-125", i === index);
+                });
+                currentPage = index;
+            }
+
+            function nextPage() {
+                showPage((currentPage + 1) % totalPages);
+            }
+
+            function prevPage() {
+                showPage((currentPage - 1 + totalPages) % totalPages);
+            }
+
+            document.getElementById("next").addEventListener("click", nextPage);
+            document.getElementById("prev").addEventListener("click", prevPage);
+
+            // Auto-slide
+            setInterval(nextPage, 5000);
+
+            showPage(0);
+        </script>
+
+
+
+        <!-- ABOUT -->
+        <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+            <div class="bg-neutral-800 rounded-2xl p-8 glass">
+                <div class="grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-1">
+                        <div class="w-40 h-40 rounded-xl overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c"
+                                alt="avatar" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-semibold">About</h3>
+                            <p class="text-neutral-300">Designer focused on brand, editorial, and packaging.
+                                Visual-first portfolio — images only, no captions.</p>
+                            <div class="mt-4 flex gap-3">
+                                <a href="#contact"
+                                    class="px-4 py-2 rounded-md bg-white text-neutral-900 font-medium">Hire me</a>
+                                <a href="#contact" class="px-4 py-2 rounded-md glass">Say hi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+            <div class="rounded-2xl bg-neutral-800/30 p-8 glass">
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Get in touch</h3>
+                        <p class="mt-3 text-neutral-300">Reach me for commissions or brand
+                            work.</p>
+                        <div class="mt-6 space-y-2">
+                            <div class="text-sm text-neutral-400">Email</div>
+                            <div class="font-medium">rodreyjabon@gmail.com</div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="grid gap-3">
+                            <input class="w-full rounded-md p-3 bg-neutral-900 border border-neutral-700"
+                                placeholder="Name">
+                            <input class="w-full rounded-md p-3 bg-neutral-900 border border-neutral-700"
+                                placeholder="Email">
+                            <textarea class="w-full rounded-md p-3 bg-neutral-900 border border-neutral-700" rows="4"
+                                placeholder="Message"></textarea>
+                            <div class="flex justify-end">
+                                <button
+                                    class="px-5 py-3 rounded-md bg-white text-neutral-900 font-semibold">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="py-10">
+            <div class="max-w-6xl mx-auto px-6 text-center text-neutral-500 text-sm">© <span id="year"></span>
+                Rodrey Jabon — All visuals only.</div>
+        </footer>
+    </main>
+
+    <!-- IMAGE LIGHTBOX -->
+    <div id="lightbox" class="fixed inset-0 hidden items-center justify-center bg-black/80 z-40">
+        <button id="closeLb" class="absolute top-6 right-6 p-2 rounded-md glass">✕</button>
+        <div class="max-w-5xl mx-auto px-6">
+            <img id="lightboxImg" src="" alt="preview" class="w-full h-[70vh] object-contain rounded-md shadow-2xl">
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scroll for specific anchors (#work -> #portfolio, #about, #contact)
+        (function() {
+            const anchorTargets = new Set(['#work', '#about', '#contact', '#portfolio']);
+
+            function resolveTarget(hash) {
+                if (!hash) return null;
+                let id = hash.replace('#', '');
+                if (id === 'work') id = 'portfolio';
+                return document.getElementById(id);
+            }
+
+            function scrollToElement(el) {
+                if (!el) return;
+                const header = document.querySelector('header');
+                const headerHeight = header ? header.offsetHeight : 0;
+                const offset = 12; // small breathing room
+                const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+
+            // Attach handlers to matching in-page anchors
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                const href = a.getAttribute('href');
+                if (!anchorTargets.has(href)) return;
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = resolveTarget(href);
+                    if (target) scrollToElement(target);
+                    // close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+                    // update URL without jumping
+                    try { history.replaceState(null, '', href); } catch (err) { /* ignore */ }
+                });
+            });
+
+            // If page loaded with a relevant hash, smooth-scroll to it
+            if (anchorTargets.has(location.hash)) {
+                window.setTimeout(() => {
+                    const target = resolveTarget(location.hash);
+                    if (target) scrollToElement(target);
+                }, 60);
+            }
+        })();
+
+        // Lightbox for images (improved)
+        const projectBtns = document.querySelectorAll('.project-btn');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeLb = document.getElementById('closeLb');
+
+        // Utility: try to return a higher-res URL for common providers
+        function highResUrl(src) {
+            try {
+                const url = new URL(src);
+                // Picsum: change size params to larger fixed width
+                if (url.hostname.includes('picsum.photos')) {
+                    // picsum urls often are like /600/400?random=1
+                    const parts = url.pathname.split('/').filter(Boolean);
+                    if (parts.length >= 2) {
+                        // set width to 2000 and keep random query
+                        return `https://picsum.photos/2000/1200${url.search}`;
+                    }
+                    return src;
+                }
+
+                // Unsplash: try to replace w= parameter if present
+                if (url.hostname.includes('images.unsplash.com')) {
+                    // Unsplash source URLs support &w= or ?w=
+                    if (url.searchParams.has('w')) {
+                        url.searchParams.set('w', '2400');
+                        return url.toString();
+                    }
+                    return src;
+                }
+
+                // Fallback: return original
+                return src;
+            } catch (err) {
+                return src;
+            }
+        }
+
+        function openLightbox(imgEl) {
+            const src = imgEl.getAttribute('src') || imgEl.dataset.src || '';
+            lightboxImg.src = highResUrl(src);
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            closeLb.focus();
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            lightboxImg.src = '';
+            document.body.style.overflow = '';
+        }
+
+        projectBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const img = btn.querySelector('img');
+                if (!img) return;
+                openLightbox(img);
+            });
+        });
+
+        closeLb.addEventListener('click', () => closeLightbox());
+
+        // Close on Esc
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                closeLightbox();
+            }
+        });
+
+        // Backdrop click closes
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+    </script>
+</body>
+
+</html>
